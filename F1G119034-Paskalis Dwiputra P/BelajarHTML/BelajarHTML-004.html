@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Belajar HTML-004</title>
+  <meta name="keywords" content="HTML">
+  <meta name="description"
+    content="images, tables, lists, block & inline, classes, id, iframes, javascript, file paths, head">
+  <meta name="author" content="Paskalis Dwiputra P">
+  <meta http-equiv="refresh" content="5">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table,
+    tr,
+    th,
+    td {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 20px;
+      background-color: blanchedalmond;
+    }
+
+    .belajarImages,
+    .belajarTables,
+    .belajarLists,
+    .belajarBlockAndInline,
+    .belajarClasses,
+    .belajarId,
+    .belajarIframes,
+    .belajarJavaScript,
+    .belajarFilePaths,
+    .belajarTagHead {
+      border: 4px dotted black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Belajar HTML-004</h1>
+  <div class="belajarImages">
+    <h3>Belajar tentang Images pada HTML</h3>
+    <!-- tag images, menggunakan gambar yang ada pada direktori -->
+    <img src="img/baby-panda-eating-bamboo.jpg" alt="Baby Panda eating Bamboo" style="weight:100px; height:100px;">
+    <!-- src untuk source filenya, sedangkan alt untuk deskripsi dalam bentuk teks yang akan nampak bila gambar gagal di load. -->
+
+    <!-- tag imgaes, yang ini menambah gambar yang ada di internet menggunakan url gambar -->
+    <img src="http://1.bp.blogspot.com/_BWE1ad1xawQ/S8rXcUZbAZI/AAAAAAAAAEM/rvr9wdZzlHY/s1600/panda.jpg"
+      alt="Lazy Panda" style="weight:100px; height:100px;">
+
+    <!-- gambar sebagai link -->
+    <a
+      href="https://www.google.com/search?q=gambar+panda&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiu6oH-wq_zAhXHV30KHX3cD8AQ_AUoAXoECAEQAw">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="Gambar Search untuk Panda" width="100">
+    </a>
+  </div>
+  <div class="belajarTables">
+    <h3>Belajar tentang Tables pada HTML</h3>
+    <!-- tag tables -->
+    <table>
+      <tr>
+        <th>HTML</th>
+        <th>CSS</th>
+        <th>JavaScript</th>
+      </tr>
+      <tr>
+        <td>Sebagai Kerangka Dasar</td>
+        <td>Untuk Menghias HTML</td>
+        <td>Untuk Memberi Behavior sehingga lebih interaktif</td>
+      </tr>
+    </table>
+  </div>
+  <div class="belajarLists">
+    <h3>Belajar tentang List pada HTML</h3>
+    <!-- tag list pada html ada 3, yaitu ordered list, unordered list, dan description list -->
+    <!-- ordered list -->
+    <p>Makanan kesukaan saya:</p>
+    <ol>
+      <li>Sate</li>
+      <li>Ayam Bakar</li>
+      <li>Babi Panggang</li>
+    </ol>
+    <!-- unordered list -->
+    <p>Minuman kesukaan saya:</p>
+    <ul>
+      <li>Kopi</li>
+      <li>Kopi</li>
+      <li>Kopi</li>
+    </ul>
+    <!-- description list -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>Hypertext Markup Language, bahasa markup yang digunakan untuk membangun website.</dd>
+      <dt>CSS</dt>
+      <dd>Cascade Styling Sheet, bahasa styling khusus untuk menghias HTML/laman website.</dd>
+      <dt>JavaScript</dt>
+      <dd>Bahasa Pemrograman yang dikhususkna untuk pengembangan website.</dd>
+    </dl>
+  </div>
+  <div class="belajarBlockAndInline">
+    <h3>Belajar tentang Block & Inline pada HTML</h3>
+    <p>Seperti yang terlihat pada keseluruhan halaman website ini, dibuat menggunakan nilai display block-level yakni
+      tag div</p>
+    <div style="background-color:salmon; color:white; padding:15px;border-radius:20px;">Ini adalah display div, sering
+      digunakan sebagai container untuk menyimpan elemen html lainnya.</div>
+    <p>Sementara ini adalah display inline level menggunakan tag span</p>
+    <p>Ini adalah display span, digunakan untuk menandai beberapa bagian dari text atau bagian dari document. Contohnya
+      adalah ini --> <span style="color:skyblue;font-weight:bold;">SPAN</span></p>
+  </div>
+  <div class="belajarClasses">
+    <h3>Belajar tentang Classes pada HTML</h3>
+    <p>Atribut class ini digunakan untuk menunjuk ke nama kelas dalam CSS, hal ini digunakan untuk mempermudah styling
+      di beberapa komponen elemen.</p>
+  </div>
+  <div class="belajarId">
+    <h3>Belajar tentang Id pada HTML</h3>
+    <p>Id ini digunakan untuk menunjukkan deklarasi style yang ada pada CSS, digukan juga untuk hyperlink ke tag
+      tertentu, dan juga hyperlink ke link internet. Id ini hampir mirip dengan class, bedanya
+      class dapat digunakan di beberapa elemen HTML, sedangkan Id hanya boleh digunakan oleh satu elemen HTML dalam
+      halaman.</p>
+  </div>
+  <div class="belajarIframes">
+    <h3>Belajar tentang Iframes pada HTML</h3>
+    <p>Digunkaan untuk menampilkan web di dalam web. Sebagai contoh : </p>
+    <iframe src="https://translate.google.com/?sl=en&tl=id&op=translate" title="description" frameborder="1"
+      height="150" width="95%"></iframe>
+  </div>
+  <div class="belajarJavaScript">
+    <h3>Belajar tentang Javascript pada HTML</h3>
+    <p>JavaScript membuat halaman HTML lebih dinamis dan interaktif.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+      Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+  </div>
+  <div class="belajarFilePaths">
+    <h3>Belajar tentang File paths pada HTML</h3>
+    <p>Mengenai file paths ini dapat dilihat pada bagian paling atas dimana ada gambar panda yang saya masukkan, nah
+      untuk menambahkan gambar seperti di atas diperlukan file path untuk mendeskripsikan dari mana lokasi gambar yang
+      akan kita pakai.</p>
+  </div>
+  <div class="belajarTagHead">
+    <h3>Belajar tentang Tag Head pada HTML</h3>
+    <p>Untuk head sendiri dapat dilihat pada dokumen HTML ini di bagian tag Head.</p>
+  </div>
+</body>
+
+</html>
