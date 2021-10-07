@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>fatmalasari.web pemula</title>
+</head>
+<body style="background: pink">
+	<h1><marquee style="color: red"><b>ini website pertama saya</b></marquee></h1>
+	<p align="center">
+
+		tugas web ini saya buat untuk memenuhi tugas mata kuliah perancangan dan pemrograman web.<br>
+	    pada web ini kita akan membahas mengenai laman resmi dari web universitas haluoleo.</p>
+
+	<h2 align="center">A.pengenalan</h2>
+	<p align="justify">
+
+		universitas halu oleh adalah sebuah lembaga perguruan tinggi yang berada di daerah sulawesi tenggara tepatnya di kota kendari.<br>haluoleo mempunyai kurang lebih untuk saat ini tercatat telah memiliki 14 fakultas dan program studi untuk
+		
+	paska sarjana.<br>di sebgian program studi yang banyak peminatnya sudah ada yang mendapatkan akreditas A.di bawah ini merupakan gambar sekaligus link menuju laman resmi uho.</p>
+
+<img src="logo.jpg" alt="logo.com" width="205" height="205"><br>
+	<a href="https://www.uho.ac.id;">klik di sini</a>
+	   <p><marquee><font size="25">silakan scrol ke bawah:)</font size="25"></marquee></p>
+	
+</body>
+</html>
